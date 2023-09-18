@@ -63,7 +63,7 @@ body {
 .navbar-item-header>label {
   color: #000;
   text-align: right;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -83,7 +83,7 @@ body {
 
 .navbar-text {
   color: #A0A0A0;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -112,7 +112,7 @@ body {
 
 .navbar-footer-title {
   color: #3B3551;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -131,7 +131,7 @@ body {
   color: #FF6B00;
   padding: 8px;
   border-radius: 8px;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -163,7 +163,7 @@ body {
 
 .title-block {
   color: #3B3551;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 800;
@@ -199,7 +199,7 @@ body {
 
 .card-title {
   color: #3B3551;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -209,7 +209,7 @@ body {
 
 .card-type {
   color: #3B3551;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
@@ -219,7 +219,7 @@ body {
 
 .card-numbers {
   color: #3B3551;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -229,7 +229,7 @@ body {
 .card-summary {
   color: #6F7F95;
   text-align: right;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -268,7 +268,7 @@ body {
 
 .card-header-title {
   color: #3B3551;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -318,7 +318,7 @@ body {
 .org-title {
   color: #000;
   text-align: center;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -362,7 +362,7 @@ table {
 
 th {
   color: #000;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -385,7 +385,7 @@ tr:hover {
 
 .title-row {
   color: #FF6B00;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -395,7 +395,7 @@ tr:hover {
 
 .date-row {
   color: #6B6B6B;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -405,7 +405,7 @@ tr:hover {
 
 .billable-row {
   color: #90D272;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -470,7 +470,7 @@ tr:hover {
 
   color: #FF6B00;
   text-align: center;
-  font-family: Manrope, 'Sans-serif';
+  font-family: Manrope, Sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
