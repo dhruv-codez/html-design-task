@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calopad Design Task</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart JS Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Script -->
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="logo-title">
+        <img width="176px" src="assets/images/calopad-logo/logo-title.svg" alt="Logo Title">
+        <img src="assets/images/calopad-logo/logo-subtitle.svg" alt="Logo Subtitle">
+      </div>
+
+      <!-- Navbar Items -->
+      <div class="navbar-contents">
+        <a href="#" class="navbar-item pb-1">
+          <img class="icons" src="assets/images/dashboard.svg" alt="Dashboard">
+          <p class="navbar-text">Dashboard</p>
+        </a>
+
+        <!-- <span> -->
+        <img src="assets/images/line-break.svg" alt="Line Break">
+        <!-- </span> -->
+
+        <div class="pt-2 pb-1">
+          <span class="navbar-item-header pb-1">
+            <label>Partners</label>
+            <img class="icons" src="assets/images/arrow-small-down.svg" alt="Arrow Down">
+          </span>
+
+          <a href="#" class="navbar-item">
+            <img class="icons" src="assets/images/list.svg" alt="Partners">
+            <p class="navbar-text focused-elem">Partners</p>
+          </a>
+        </div>
+
+        <!-- <span> -->
+        <img src="assets/images/line-break.svg" alt="Line Break">
+        <!-- </span> -->
+
+        <div class="pt-2">
+          <span class="navbar-item-header pb-1">
+            <label>Settings</label>
+            <img class="icons" src="assets/images/arrow-small-down.svg" alt="Arrow Down">
+          </span>
+
+          <a href="#" class="navbar-item">
+            <img class="icons" src="assets/images/settings.svg" alt="General">
+            <p class="navbar-text">General</p>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Navbar Footer -->
+      <div class="navbar-footer">
+        <!-- <div> -->
+        <p class="navbar-footer-title">Dhruv Prajapati</p>
+        <label class="user-role-label">ADMIN</label>
+        <!-- </div> -->
+
+        <span>
+          <a href="#" class="navbar-footer-item">
+            <img class="icons" src="assets/images/logout.svg" alt="Logout">
+            <p class="navbar-text">Logout</p>
+          </a>
+        </span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="sections">
+        <!-- notification section -->
+        <section class="notification-section">
+          <img class="icons" src="assets/images/notification-bell.svg" alt="Notification">
+        </section>
+
+        <!-- Dashboard Title -->
+        <section class="title-section">
+          <p class="title-block">Dashboard</p>
+        </section>
+
+        <!-- section one -->
+        <section class="section">
+          <div class="info-card">
+            <div class="card-title">Cards Total / Activated</div>
+
+            <div class="card-numbers">1"325 / 143</div>
+
+            <div class="card-summary">
+              +2% this week
+              <img class="icons arrow-up" src="assets/images/arrow-small-up-green.svg" alt="Small Arrow Up">
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-title">Revenue Initial Cards</div>
+
+            <div>
+              <span class="card-type">CHF</span>
+              <span class="card-numbers">13’250</span>
+            </div>
+
+            <div class="card-summary">
+              +17% this week
+              <img class="icons arrow-up" src="assets/images/arrow-small-up-green.svg" alt="Small Arrow Up">
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-title">Revenue Activations</div>
+
+            <div>
+              <span class="card-type">CHF</span>
+              <span class="card-numbers">7’007</span>
+            </div>
+
+            <div class="card-summary">
+              +2% this week
+              <img class="icons arrow-up" src="assets/images/arrow-small-up-green.svg" alt="Small Arrow Up">
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-title">Billing Positions</div>
+
+            <div class="card-numbers">6’945</div>
+
+            <div class="card-summary">
+              +2% this week
+              <img class="icons" src="assets/images/small-arrow-down-red.svg" alt="Small Arrow Down">
+            </div>
+          </div>
+        </section>
+
+        <!-- section two -->
+        <section class="section">
+          <div class="cards-lg">
+            <div class="card-header">
+              <div class="card-header-title">Overview Performance</div>
+              <div class="card-header-sort">
+                <p class="navbar-text"> Last 6 Days </p>
+                <img src="assets/images/small-sort.svg" alt="Sort Small">
+              </div>
+            </div>
+
+            <div class="card-chart-content">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+
+          <div class="cards-lg">
+            <div class="card-header">
+              <div class="card-header-title">Top Partners</div>
+              <div class="card-header-sort">
+                <p class="navbar-text"> This week </p>
+                <img src="assets/images/small-sort.svg" alt="Sort Small">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="growth-stats">
+                <div class="growth-value">
+                  <p class="card-numbers">465</p>
+
+                  <div class="card-summary">
+                    +2% Activations
+                    <img class="icons arrow-up" src="assets/images/arrow-small-up-green.svg" alt="Small Arrow Up">
+                  </div>
+                </div>
+
+                <span class="org-title">Omnia Physio</span>
+              </div>
+
+              <img class="hz-line-break" src="assets/images/hz-line-break.svg" alt="Horizontal Line Break">
+
+              <div class="growth-stats">
+                <div class="growth-value">
+                  <p class="card-numbers">245</p>
+
+                  <div class="card-summary">
+                    +2% Activations
+                    <img class="icons arrow-up" src="assets/images/arrow-small-up-green.svg" alt="Small Arrow Up">
+                  </div>
+                </div>
+
+                <span class="org-title">Medical Center X</span>
+              </div>
+
+              <img class="hz-line-break" src="assets/images/hz-line-break.svg" alt="Horizontal Line Break">
+
+              <div class="growth-stats">
+                <div class="growth-value">
+                  <p class="card-numbers">154</p>
+
+                  <div class="card-summary">
+                    -3% Activations
+                    <img class="icons" src="assets/images/small-arrow-down-red.svg" alt="Small Arrow Down">
+                  </div>
+                </div>
+
+                <span class="org-title">Kiosk West</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section three -->
+        <section class="section">
+          <div class="table-invoices">
+            <div class="card-header p-0">
+              <div class="card-header-title">Open Invoices</div>
+              <div class="card-header-sort">
+                <p class="navbar-text"> Oldest Entries </p>
+                <img src="assets/images/small-sort.svg" alt="Sort Small">
+              </div>
+            </div>
+
+            <div class="table-content">
+              <table>
+                <thead>
+                  <th colspan="3" align="start">Affiliate Partner</th>
+                  <th align="center">Accounting Date</th>
+                  <th align="center">Billable</th>
+                  <th align="center">Status</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td colspan="3" align="start" class="title-row">TCM Janine</td>
+                    <td align="center" class="date-row">09.03.2023 11:21</td>
+                    <td align="center" class="billable-row">CHF 49</td>
+                    <td align="center">
+                      <select class="select-custom">
+                        <option>Opened</option>
+                        <option>Closed</option>
+                        <option>Rejected</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" align="start" class="title-row">TCM Janine</td>
+                    <td align="center" class="date-row">10.03.2023 11:21</td>
+                    <td align="center" class="billable-row">CHF 49</td>
+                    <td align="center">
+                      <select class="select-custom">
+                        <option>Opened</option>
+                        <option>Closed</option>
+                        <option>Rejected</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" align="start" class="title-row">TCM Janine</td>
+                    <td align="center" class="date-row">19.03.2023 11:21</td>
+                    <td align="center" class="billable-row">CHF 49</td>
+                    <td align="center">
+                      <select class="select-custom">
+                        <option>Opened</option>
+                        <option>Closed</option>
+                        <option>Rejected</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" align="start" class="title-row">Bob Johnson</td>
+                    <td align="center" class="date-row">20.03.2023 11:21</td>
+                    <td align="center" class="billable-row">CHF 49</td>
+                    <td align="center">
+                      <select class="select-custom">
+                        <option>Opened</option>
+                        <option>Closed</option>
+                        <option>Rejected</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="pagination d-block float-r">
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <button type="button" class="next-btn">Next</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section four -->
+        <section class="section">
+          <div class="table-invoices">
+            <div class="card-header p-0">
+              <div class="card-header-title">Latest Activations</div>
+              <div class="card-header-sort">
+                <p class="navbar-text">Latest Entries</p>
+                <img src="assets/images/small-sort.svg" alt="Sort Small">
+              </div>
+            </div>
+
+            <div class="table-content">
+              <table>
+                <thead>
+                  <th align="start">Affiliate Partner</th>
+                  <th align="start">Card Type</th>
+                  <th align="start">Card Nr.</th>
+                  <th align="start">Date</th>
+                  <th align="start">Shop Order Nr.</th>
+                  <th align="start">Shop Status</th>
+                  <th align="start">Billable Positions</th>
+                  <th align="end">Actions</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="title-row" align="start">TCM Janine</td>
+                    <td align="start">
+                      <span class="card-type-label">One</span>
+                    </td>
+                    <td align="start">643OsldfjlaAsflas</td>
+                    <td class="date-row">18.01.2023</td>
+                    <td align="start">#1522</td>
+                    <td align="start">Done</td>
+                    <td class="billable-row">CHF 49</td>
+                    <td align="end">
+                      <img src="assets/images/dot-menu.svg" alt="Actions">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="start" class="title-row">TCM Janine</td>
+                    <td align="start">
+                      <span class="card-type-label">One</span>
+                    </td>
+                    <td align="start">643OsldfjlaAsflas</td>
+                    <td align="start" class="date-row">18.01.2023</td>
+                    <td align="start">#1522</td>
+                    <td align="start">Done</td>
+                    <td align="start" class="billable-row">CHF 49</td>
+                    <td align="end">
+                      <img src="assets/images/dot-menu.svg" alt="Actions">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="start" class="title-row">TCM Janine</td>
+                    <td align="start">
+                      <span class="card-type-label">One</span>
+                    </td>
+                    <td align="start">643OsldfjlaAsflas</td>
+                    <td align="start" class="date-row">18.01.2023</td>
+                    <td align="start">#1522</td>
+                    <td align="start">Done</td>
+                    <td align="start" class="billable-row">CHF 49</td>
+                    <td align="end">
+                      <img src="assets/images/dot-menu.svg" alt="Actions">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="start" class="title-row">Bob Johnson</td>
+                    <td align="start">
+                      <span class="card-type-label">One</span>
+                    </td>
+                    <td align="start">643OsldfjlaAsflas</td>
+                    <td align="start" class="date-row">18.01.2023</td>
+                    <td align="start">#1522</td>
+                    <td align="start">Done</td>
+                    <td align="start" class="billable-row">CHF 49</td>
+                    <td align="end">
+                      <img src="assets/images/dot-menu.svg" alt="Actions">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="pagination d-block float-r">
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <button type="button" class="next-btn">Next</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
